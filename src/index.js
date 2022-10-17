@@ -23,7 +23,10 @@ abas.forEach((aba) => {
     informacaoSelecionada.classList.remove("selecionado");
 
     //passo 6 - mostrar o conteúdo da aba selecionada
-        
+        const idElementoInformacoes = `informacao-${aba.id}`
+
+        const informacaoMostrada = document.getElementById(idElementoInformacoes)
+        informacaoMostrada.classList.add("selecionado")
 
   });
 });
